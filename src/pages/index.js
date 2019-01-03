@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
+import ReadMore from '../components/ReadMore'
 
 class BlogIndex extends React.Component {
   render() {
@@ -32,8 +35,17 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
+<<<<<<< HEAD
               <small>{node.frontmatter.date} ---->>>>> </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+=======
+              <small>{node.frontmatter.date}</small>
+              <div style={{ display: 'flex' }}>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                {/* <FontAwesomeIcon icon={ faChevronRight } size="lg"/> */}
+                {/* <ReadMore /> */}
+              </div>
+>>>>>>> design
             </div>
           )
         })}
