@@ -34,7 +34,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: `Zilla Slab, Montserrat, sans-serif`,
             marginTop: 0,
             marginBottom: rhythm(-1),
           }}
@@ -43,7 +43,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `#20bfb1`,
             }}
             to={`/`}
           >

@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
