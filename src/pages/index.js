@@ -35,17 +35,12 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-<<<<<<< HEAD
-              <small>{node.frontmatter.date} ---->>>>> </small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-=======
               <small>{node.frontmatter.date}</small>
               <div style={{ display: 'flex' }}>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                 {/* <FontAwesomeIcon icon={ faChevronRight } size="lg"/> */}
                 {/* <ReadMore /> */}
               </div>
->>>>>>> design
             </div>
           )
         })}
