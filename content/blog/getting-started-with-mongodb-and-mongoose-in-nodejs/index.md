@@ -152,7 +152,7 @@ One important thing I want to point to is the first 4 lines of this file. By ope
 
 Unfortunately we won't be able to see our blog post if we simply access http://localhost:8000/first-post because we still need to do some further configuration. If you try to access it, you'll get a 404 error:
 
-![404 Error](/img/404.png)
+![404 Error](/img/404&#32;Error.png)
 
 So, let's begin by creating a template for our blog posts. Inside `src` folder, create a new folder called `templates` and inside it create a file called `post.js`. We will use this file as a default template that our blog posts will be rendered in.
 
