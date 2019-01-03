@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
+import ReadMore from '../components/ReadMore'
 
 class BlogIndex extends React.Component {
   render() {
@@ -23,7 +26,7 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h1
+              <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
@@ -31,9 +34,13 @@ class BlogIndex extends React.Component {
                 <Link style={{ boxShadow: `none`, color: '#20bfb1' }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h1>
-              <small>{node.frontmatter.date} ---->>>>> </small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <div style={{ display: 'flex' }}>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                {/* <FontAwesomeIcon icon={ faChevronRight } size="lg"/> */}
+                <ReadMore />
+              </div>
             </div>
           )
         })}
