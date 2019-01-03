@@ -31,7 +31,7 @@ By running `gatsby develop` you'll start a live server in the port 8000, where y
 
 Access http://localhost:8000 and you'll se something similar to this:
 
-![Screen Shot 2018-12-28 at 10.00.30](/Users/danilomiranda/Desktop/Screen Shot 2018-12-28 at 10.00.30.png)
+![Hello Gatsby](/img/Hello&#32;Gatsby.png)
 
 
 
@@ -75,7 +75,7 @@ In my project, this file we are going to use for this firts test is located at:
 
 Inside components folder you'll probably have a file called `layout.css` or `index.css`. Something relating to stylesheet file. Change the extension from `.css` to `.scss`. All you have to do is find where this stylesheet file is being imported, in my case is inside the `layout.js` file
 
-![Screen Shot 2018-12-28 at 10.24.58](/Users/danilomiranda/Desktop/Screen Shot 2018-12-28 at 10.24.58.png)
+![Files](/img/Files.png)
 
 Inside `layout.js` file you'll probably have a line importing our style file
 
@@ -152,7 +152,7 @@ One important thing I want to point to is the first 4 lines of this file. By ope
 
 Unfortunately we won't be able to see our blog post if we simply access http://localhost:8000/first-post because we still need to do some further configuration. If you try to access it, you'll get a 404 error:
 
-![Screen Shot 2018-12-28 at 11.49.15](/Users/danilomiranda/Desktop/Screen Shot 2018-12-28 at 11.49.15.png)
+![404](/img/404.png)
 
 So, let's begin by creating a template for our blog posts. Inside `src` folder, create a new folder called `templates` and inside it create a file called `post.js`. We will use this file as a default template that our blog posts will be rendered in.
 
@@ -349,4 +349,4 @@ Perfect!
 
 Now, if you save this and start your server again, acces the address http://localhost:8000/first-post you'll be able to see our first post:
 
-![Screen Shot 2018-12-28 at 15.27.13](/Users/danilomiranda/Desktop/Screen Shot 2018-12-28 at 15.27.13.png)
+![First Post](/img/First&#32;Post.png)

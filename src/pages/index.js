@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
               <div style={{ display: 'flex' }}>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                 {/* <FontAwesomeIcon icon={ faChevronRight } size="lg"/> */}
-                <ReadMore />
+                {/* <ReadMore /> */}
               </div>
             </div>
           )
