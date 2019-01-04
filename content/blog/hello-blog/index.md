@@ -54,5 +54,27 @@ In fact, I developed a simple theme to meet my initial needs. Not everything abo
 
 With that theme I planned ahead some pages that I would want it to have right at the launch (about me, resources, etc.) and that lead me to hell.
 
-I was so anxious to launch something, to have some useful posts that I kept postponing the content of these pages, and without that I thought that the website in general would suck
+I was so anxious to launch something, to have some useful posts that I kept postponing the content of these pages, and without that I thought that the website in general would suck.
+
+So again, nothing posted, no blog launched...
+
+
+
+At this point, I have to admit that "not putting the work" was one of the main reasons of not launching anything
+
+
+
+Now let's continue...
+
+## GatsbyJS
+
+I got stuck a few days with this thing about having to create the content for the pages, and then I was checking some of [Level up Tutorials](https://www.leveluptutorials.com) content and then I found out about GatsbyJS, a static site generator and followed through the [Getting Started With Gatsby](https://www.leveluptutorials.com/tutorials/gatsbyjs-tutorials) video series.
+
+I love Gatsby, it's not that difficult to get started with, even if you don't know to much of GraphQL, but it's to have at least a basic knowledge of ReactJS.
+
+And then the final decision, I would use Gatsby to build my blog, and use it to push myself towards learning more React and GraphQL.
+
+As I was crazy to start posting, a decided to work with the [gatsby starter file](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/) just to have a blog up and running in no time. I just tweaked a few colors so it would feel more "mine".
+
+In the future (I promise that) I'll build something more from the "ground up" with GatsbyJS, and I'll make sure I'll document everything.
 
