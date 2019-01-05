@@ -1,6 +1,6 @@
 ---
 title: Getting started with Gatsby
-date: '2019-01-02'
+date: '2019-01-05'
 ---
 
 ## Creating a new project
