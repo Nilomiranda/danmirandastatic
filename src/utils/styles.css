@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Zilla+Slab');
+
+a {
+    color: #20bfb1;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Zilla Slab', serif;
+}
+
