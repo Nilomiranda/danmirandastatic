@@ -1,4 +1,4 @@
-import './src/utils/styles.scss'
+import './src/utils/styles.css'
 
 // custom typefaces
 import 'typeface-montserrat'

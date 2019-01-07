@@ -5,7 +5,6 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-import ReadMore from '../components/ReadMore'
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,7 +15,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
+          title="Danilo"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
