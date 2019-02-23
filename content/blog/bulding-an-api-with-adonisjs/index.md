@@ -1,9 +1,7 @@
 ---
-title: Building an API with AdonisJS
+title: Building an API with AdonisJS (part 1)
 date: '2019-02-23'
 ---
-
-# Bulding an API with AdonisJS
 
 Hi everyone! Over this series we will be creating an API using AdonisJS, a framework used to build NodeJS applications.
 
