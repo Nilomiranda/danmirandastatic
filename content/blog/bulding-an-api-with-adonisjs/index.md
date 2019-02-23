@@ -1,5 +1,5 @@
 ---
-title: Building and API with AdonisJS
+title: Building an API with AdonisJS
 date: '2019-02-23'
 ---
 
