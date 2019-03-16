@@ -5,14 +5,14 @@ date: '2019-03-16'
 
 Hello folks! The third part of the series is finally here! 👏👏👏👏
 
-If you are a new comer, this is a series that will cover all the steps we need to build an API using [AdonisJS](https://adonisjs.com). This is the third part of the series, and here are the links for the precious posts:
+If you are a new comer, this is a series that will cover all the steps we need to build an API using [AdonisJS](https://adonisjs.com). This is the third part of the series, and here are the links for the previous posts:
 
 - [Part 1](https://danmiranda.io/bulding-an-api-with-adonisjs/)
 - [Part 2](https://danmiranda.io/building-an-api-with-adonis-part-2/)
 
 In this part, and I promise this will be shorter, we will cover how to implement the feature for a user to create a new event, setting a specific date, location and time.
 
-So we'll learn how to create a new model, as the previous one was already created at the moment we scaffolded our application, how to create a new migration to properly set the columns we'll need in our table and how to stablish a relationship between to models.
+So we'll learn how to create a new model, as the previous one was already created at the moment we scaffolded our application, how to create a new migration to properly set the columns we'll need in our table and how to establish a relationship between to models.
 
 So let's get our hands dirty...
 
@@ -100,7 +100,7 @@ Now we set the other columns:
 - The date column, as a DATETIME with `table.datetime('date')`
 - And the time column, as a TIME with `table.time('time')
 
-Notice that for all these columns in each one of them I also set `.notNullable()` because the user will have to set each of these values everytime he creates a new event.
+Notice that for all these columns in each one of them I also set `.notNullable()` because the user will have to set each of these values every time he creates a new event.
 
 After all this work we can run our migration:
 
@@ -129,7 +129,7 @@ That's all we need to do! Now we'll be able to start creating our controller to 
 
 ## Creating and saving a new event
 
-First let's create our `store()` method to enable a user to create and save a new event. 
+First, let's create our `store()` method to enable a user to create and save a new event. 
 
 In `App/Controllers/Http/EventController.js` we'll do:
 
@@ -177,7 +177,7 @@ To test the event creation we send a request to this route, sending a JSON data 
 }
 ```
 
-If everything run smoothly the request will return you the created event:
+If everything runs smoothly the request will return you the created event:
 
 ```JSON
 {
@@ -226,7 +226,7 @@ const events = await Event.query()
         }).fetch()
 ```
 
-We open the query with `.query()`  and then we set the where statement, passing an object as parameter to pass the filters to search for the data:
+We open the query with `.query()`  and then we set the where statement, passing an object as a parameter to pass the filters to search for the data:
 
 ```javascript
 .where({
@@ -259,7 +259,7 @@ This request won't need any parameter. If successfully completed you'll have as 
 ]
 ```
 
-Now we'll list the events by date, and for that we'll create a method called `show()`. 
+Now we'll list the events by date, and for that, we'll create a method called `show()`. 
 
 ```javascript
 async show ({ request, response, auth }) {
@@ -294,7 +294,7 @@ async show ({ request, response, auth }) {
     }
 ```
 
-What we are doing is, retrieving the date sent in the request and the logged user's ID. Then again we manually query for events using the user's ID and the date he provided within his request.
+What we are doing is, retrieving the data sent in the request and the logged user's ID. Then again we manually query for events using the user's ID and the date he provided within his request.
 
 Now we need to check if we have events in the given date or not. 
 
@@ -318,7 +318,7 @@ Don't forget to create a route to call this controller when accessed:
 Route.get('events/list/date', 'EventController.show')
 ```
 
-In this example we created an event to happen in March 16th, 2019. If we sent the following JSON in the request:
+In this example, we created an event to happen on March 16th, 2019. If we sent the following JSON in the request:
 
 ```json
 {
@@ -326,7 +326,7 @@ In this example we created an event to happen in March 16th, 2019. If we sent th
 }
 ```
 
-We receive as return:
+We receive as a return:
 
 ```json
 [
@@ -363,7 +363,7 @@ We'll receive the following:
 
 ## Deleting events
 
-The only feature missing is the ability to delete an event. It'll be quite simple. We'll get, as usual, the logged user's ID and the event ID. Then we look for the event in the database. To make sure that the user only deletes his owned events we'll check if the logged user's ID is the same as the event being deleted and then proceed deleting the event.
+The only feature missing is the ability to delete an event. It'll be quite simple. We'll get, as usual, the logged user's ID and the event ID. Then we look for the event in the database. To make sure that the user only deletes his owned events we'll check if the logged user's ID is the same as the event being deleted and then proceed to delete the event.
 
 Let's add some code to our `destroy()` method:
 
@@ -420,4 +420,4 @@ As we are only sending all the data we need through the Url we won't need to sen
 
 This is it for this one guys! 
 
-Today we learned how to create a new model, together with a controller and a migration file and also how to set relationship between different tables
+Today we learned how to create a new model, together with a controller and a migration file and also how to set a relationship between different tables
